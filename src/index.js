@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     setTimeout(() => {
                         hello.style.transform = helloTranslation;
-                        links.style.top = '50%';
+                        links.style.bottom = '0';
                         links.style.position = 'fixed';
                         links.style.zIndex = 2;
                         links.style.opacity = 1;
