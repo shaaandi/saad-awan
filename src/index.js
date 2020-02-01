@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let helloFont = 50;
     let helloTranslation = `translateX(500px)`;
     if (maxWidth < 1030) {
-        helloFont = 40;
+        helloFont = 35;
     }
     if (maxWidth < 800) {
         helloTranslation = `translateX(300px)`;
