@@ -1,0 +1,366 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background: #fafafa;
+    margin: 0;
+    opacity: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    font-size: large;
+    padding: 5px;
+    opacity: 0;
+    transition: 1s;
+
+    position: fixed;
+    right: 0;
+    left: 0;
+    background: #fafafa;
+    z-index: 15;
+}
+
+#brand {
+    font-size: larger;
+    /* font-weight: bolder; */
+}
+
+nav .right {
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 50%;
+}
+
+nav .navButton {
+    border-bottom: solid white;
+}
+
+#landing {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+/* #landing #links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 1s;
+} */
+
+#profilePic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 1s;
+}
+
+#links .landingLink {
+    padding: 10px;
+    font-size: large;
+    background: white;
+    border: solid 0.2px #303030;
+}
+
+#landing #hello {
+    padding: 5px;
+    font-size: 90px;
+    text-align: start;
+    margin: 220px 0;
+    font-weight: bold;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    transition: 1s;
+    font-family: 'Open Sans', sans-serif;
+    /* position: absolute; */
+}
+
+.helloLine {
+    opacity: 0;
+    transition: 1s;
+}
+
+#landingDown {
+    flex-basis: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    right: 50%;
+}
+
+/* About me section styling */
+
+#aboutMeSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #303030;
+    z-index: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 150px 0;
+}
+
+#aboutHeading {
+    font-size: 60px;
+    color: #fafafa;
+    border-bottom: solid;
+    font-family: 'Righteous', cursive;
+}
+
+#info {
+    font-size: 26px;
+    flex-basis: 42%;
+    /* margin: 250px 0; */
+    color: #fafafa;
+    margin: 50 350;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Featured Project Page */
+
+#featured {
+    flex-basis: 100%;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 32px;
+}
+
+#featuredProject {
+    background-color: #fafafa;
+    display: flex;
+    padding-top: 40px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    z-index: 3;
+}
+
+#featuredInfo {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    flex-basis: 40%;
+    font-family: 'Poppins', sans-serif;
+}
+
+#featuredPic {
+    flex-basis: 50%;
+}
+
+#featuredPic img {
+    width: 100%;
+}
+
+#featuredInfo #title {
+    font-size: 27px;
+}
+
+#featuredInfo #bullets {
+    font-size: 23px;
+}
+
+#featuredStackUse {
+    display: flex;
+    justify-content: center;
+    flex-basis: 100%;
+}
+
+#featuredStackUse img {
+    height: 200px;
+}
+
+#featuredLinesHead {
+    display: block;
+}
+
+.featuredLines {
+    padding-left: 10px;
+}
+
+/* Footer styling  */
+
+#footer {
+    background-color: white;
+    z-index: 3;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    align-items: center;
+    padding: 10px;
+}
+#mySkills {
+    flex-basis: 60%;
+
+    border-right: solid #303030;
+}
+#network {
+    flex-basis: 30%;
+}
+
+#email-me-message {
+    flex-basis: 100%;
+}
+
+#mySkills-head {
+    font-size: 28px;
+    margin: 20px 0;
+}
+
+#part {
+    display: flex;
+    flex-direction: column;
+}
+
+#part-head {
+    font-size: 23px;
+    margin: 10px 0;
+}
+
+#part-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill-name {
+    padding: 3px;
+    font-size: large;
+    background: #303030;
+    border: solid 1px white;
+    margin: 3px 5px;
+    color: white;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-family: 'Major Mono Display', monospace;
+}
+
+.skill-name:hover {
+    background: #fafafa;
+    color: #303030;
+    border: solid 1px #303030;
+    cursor: initial;
+}
+
+#network {
+    display: flex;
+    /* flex-direction: column; */
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+#network-tab {
+    padding: 3px;
+    font-size: large;
+    background: white;
+    border: solid 0.2px #303030;
+    margin: 3px 5px;
+}
+
+#network-tab a {
+    color: #303030;
+    text-decoration: none;
+}
+
+#email a {
+    color: #303030;
+    text-decoration: none;
+}
+
+#email-me-message {
+    text-align: center;
+}
+#message {
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+#email {
+    background: none;
+    border: solid 1px #222;
+    border-radius: 5px;
+    font-size: 25px;
+}
+
+/* ,media queries  */
+@media only screen and (max-width: 1030px) {
+    #landing #hello {
+        font-size: 60px;
+    }
+
+    #profilePic img {
+        width: 300px;
+    }
+
+    #aboutHeading {
+        font-size: 50px;
+    }
+
+    #info {
+        font-size: 23px;
+        margin: 50px 200px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .featuredLines {
+        font-size: 20px;
+    }
+
+    #message {
+        font-size: 30px;
+    }
+
+    #email-me-message {
+        font-size: 23px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #landing #hello {
+        font-size: 35px;
+    }
+
+    #aboutHeading {
+        font-size: 30px;
+    }
+
+    #info {
+        margin: 40px 60px 80px 60px;
+    }
+
+    #featuredInfo {
+        margin: 20px 0px;
+        flex-basis: 100%;
+    }
+
+    #featuredPic {
+        flex-basis: 100%;
+        margin-left: 40px;
+    }
+
+    #footer {
+        height: initial;
+    }
+
+    #mySkills {
+        flex-basis: 100%;
+        border: none;
+        margin: 30px 0;
+    }
+
+    #network {
+        flex-basis: 100%;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    #info {
+        font-size: 18px;
+    }
+}
